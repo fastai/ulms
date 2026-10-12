@@ -1,0 +1,23 @@
+.archive-notice {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #dfd5bd;
+  background: #fff7e2;
+  color: #463b26;
+  font: 14px/1.5 system-ui, sans-serif;
+  text-align: center;
+}
+
+.archive-notice strong {
+  color: inherit;
+}
+
+.archive-notice a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.archive-notice a:hover,
+.archive-notice a:focus-visible {
+  color: #8c1515;
+}

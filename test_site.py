@@ -3,7 +3,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 from bs4 import BeautifulSoup
 
-site = Path(__file__).parent/'universalmodels'
+site = Path(__file__).parent/'docs'
 
 
 def test_local_pages_and_fonts():

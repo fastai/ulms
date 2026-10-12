@@ -6,8 +6,8 @@ The starting point was the [July 28, 2021 workshop snapshot](https://web.archive
 
 ## What was recovered
 
-- `universalmodels/workshop.html`: the July 28, 2021 workshop page.
-- `universalmodels/index.html`: the August 3, 2021 homepage.
+- `docs/workshop.html`: the July 28, 2021 workshop page.
+- `docs/index.html`: the August 3, 2021 homepage.
 - Styles, scripts, logos, and workshop artwork: August 24, 2021 captures of the original domain.
 - Missing shared styles, icon fonts, and the Stanford panorama: August/September 2021 captures of `crfm.stanford.edu`. Several shared files have identical archive hashes on both domains. No later CRFM page text was substituted.
 
@@ -20,16 +20,16 @@ Bootstrap 5.0.1 and jQuery 3.6.0 were downloaded from the original pinned CDN UR
 From this directory:
 
 ```bash
-python -m http.server 8765 --bind 127.0.0.1 --directory universalmodels
+python -m http.server 8765 --bind 127.0.0.1 --directory docs
 ```
 
 Open <http://127.0.0.1:8765/> or <http://127.0.0.1:8765/workshop.html>. No build step is needed.
 
 ## Publishing
 
-Publish `universalmodels/` as the GitHub Pages artifact using an Actions workflow. Branch-based Pages publishing only supports the repository root or `/docs`.
+In the repository's GitHub Pages settings, select **Deploy from a branch**, branch `main`, and folder `/docs`.
 
-`universalmodels/CNAME` specifies `universalmodels.fast.ai`. Its DNS-only Cloudflare CNAME points to `fastai.github.io`. Configure the same custom domain in the repository's Pages settings.
+`docs/CNAME` specifies `universalmodels.fast.ai`. Its DNS-only Cloudflare CNAME points to `fastai.github.io`. Configure the same custom domain in the repository's Pages settings.
 
 ## Recovery helpers and checks
 

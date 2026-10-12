@@ -4,7 +4,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 root = Path(__file__).parent
-site = root/'universalmodels'
+site = root/'docs'
 meta = root/'meta'
 
 
